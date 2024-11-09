@@ -1,10 +1,180 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
+
 <head>
     <meta charset="UTF-8">
-    <title>Send</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="author" content="Viacheslav Chetyrkin">
+    <meta name="copyright" content="NAME PROJECT 2021 © All Rights Reserved">
+    <title>Skyup - подать заявку</title>
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="images/su_sk.png" type="image/x-icon" style="border-radius: 5px;">
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/fae01cee28.js" crossorigin="anonymous"></script>
+    <!-- Bootstrap-->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- Style -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Responsive Style -->
+    <link rel="stylesheet" href="css/responsive.css">
+    <!-- Animate CSS -->
+    <link rel="stylesheet" href="plugins/animate.css-master/animate.min.css">
+    <!-- Light Box -->
+    <link href="plugins/lightbox2-master/dist/css/lightbox.css" rel="stylesheet">
+    <!-- Video js -->
+    <link href="css/video-js.css" rel="stylesheet">
+    <!-- Datapicker -->
+    <link href="plugins/jquery-date-range-picker-master/dist/daterangepicker.min.css" rel="stylesheet">
+    <!-- Sliders -->
+    <link rel="stylesheet" type="text/css" href="plugins/slick-1.8.0/slick/slick.css">
+    <link rel="stylesheet" type="text/css" href="plugins/slick-1.8.0/slick/slick-theme.css">
+    <link rel="stylesheet" type="text/css" href="plugins/slider/css/normalize.min.css" media="screen, print">
+    <link rel="stylesheet" type="text/css" href="plugins/slider/css/smartslider.min.css" media="screen, print">
+    <script type="text/javascript" src="plugins/slider/js/n2-j.min.js"></script>
+    <script type="text/javascript" src="plugins/slider/js/nextend-gsap.min.js"></script>
+    <script type="text/javascript" src="plugins/slider/js/nextend-frontend.min.js"></script>
+    <script type="text/javascript" src="plugins/slider/js/smartslider-frontend.min.js"></script>
+    <script type="text/javascript" src="plugins/slider/js/smartslider-simple-type-frontend.min.js"></script>
+    <script type="text/javascript" src="plugins/slider/js/nextend-webfontloader.min.js"></script>
 </head>
-<body>
 
+<body>
+    <!-- PRELOADER START -->
+    <div class="loader-wrapper">
+        <div class='cssload-loader'>
+            <div class='cssload-inner cssload-one'></div>
+            <div class='cssload-inner cssload-two'></div>
+            <div class='cssload-inner cssload-three'></div>
+        </div>
+    </div>
+    <!-- PRELOADER END -->
+    <!-- HEADER START -->
+    <div class="header-line-wrapper">
+        <header class="header-wrapper fixed-top plr100">
+            <div class="table height-100p">
+                <div class="table-row">
+                    <div class="table-cell valign-middle text-left">
+                        <a href="/" class="logo">
+                            <img src="images/su.png" alt="" class="img-responsive inline-block" style="width: 60px; height: 60px; border-radius: 5px;">
+                        </a>
+                    </div>
+                    <div class="table-cell valign-top text-center vm-sm">
+                        <div class="main-menu">
+                            <span class="toggle_menu">
+                                <span></span>
+                            </span>
+                            <ul class="menu clearfix">
+                                <li class="inline-block">
+                                    <a href="/">
+                                        Главная
+                                    </a>
+                                </li>
+                                <li class="inline-block">
+                                    <a href="https://shop.skyup.su/">
+                                        Магазин
+                                    </a>
+                                </li>
+                                <li class="inline-block">
+                                    <a href="https://skyup.su/assets">
+                                        Ассеты
+                                    </a>
+                                </li>
+                                <li class="inline-block">
+                                    <a href="https://skyup.su/rules">
+                                        Правила
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+    </div>
+    <!-- SERVERS SECTION END -->
+    <!-- NEWS SECTION START -->
+    <section class="news-section ptb90">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="pr" style="margin-top: 100px;"></div>
+                    <div class="title-bl text-center wow fadeIn" data-wow-duration="2s">
+                        <div class="title color-white">
+                            Форма подачи заявок
+                        </div>
+                        <div class="subtitle">
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="content" style="margin-left: 28%;">
+            <p>
+                <h6>Если не работает подавай заявку <a href="https://discord.gg/xwXpkFaU94">тут</a></h6>
+                Ваш игровой ник <input type="text" id="name" name="name" placeholder="filin201077"> <br>
+                Ваш возвраст <input type="text" id="age" placeholder="16" name="age"> <br>
+                Напишите о себе, о том где вы еще играли, ваши планы на сервер и сколько примерно времени вы готовы ему уделять <br>
+                <textarea id="description" placeholder="Я..." name="description"></textarea> <br> <br>
+                <button id="send">Подать заявку</button>
+                <br> <br>
+                <p id="res">Если у вас отключен JavaScript, то заявки могут не работать!</p>
+            </p>
+        </div>
+        <style>
+            input::placeholder, textarea::placeholder{
+                color: rgb(192, 192, 192);
+            }
+            input, textarea{
+                color: black;
+            }
+            #send{
+                background: rgb(98,102,216); 
+                border: none; 
+                border-radius: 5px;
+                transition: 200ms;
+            }
+            #send:hover{
+                background: rgb(148,0,211);
+                transition: 200ms;
+            }
+        </style>
+    </section>
+    <!-- NEWS SECTION END -->
+    <!-- FOOTER START -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="copyright ptb30 col-lg-12">
+                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                        Copyright 2024 © All Rights Reserved
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 text-right">
+                        Skyup.su
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Scripts -->
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="plugins/slick-1.8.0/slick/slick.min.js"></script>
+    <script src="plugins/flex-menu/flexmenu.min.js"></script>
+    <script src="plugins/jquery-match-height-master/dist/jquery.matchHeight.js"></script>
+    <script src="plugins/muuri-master/muuri.js"></script>
+    <script src="plugins/vide-0.5.1/dist/jquery.vide.min.js"></script>
+    <script src="plugins/paroller.js-master/dist/jquery.paroller.min.js"></script>
+    <script src="js/video.js"></script>
+    <script src="js/jquery.inview.min.js"></script>
+    <script src="js/progressbar.min.js"></script>
+    <script src="plugins/lightbox2-master/dist/js/lightbox.js"></script>
+    <script src="js/moment.min.js"></script>
+    <script src="plugins/jquery-date-range-picker-master/dist/jquery.daterangepicker.min.js"></script>
+    <script src="plugins/wow-master/dist/wow.min.js"></script>
+    <script src="js/script.js"></script>
+    <script src="send.js"></script>
 </body>
+
 </html>
