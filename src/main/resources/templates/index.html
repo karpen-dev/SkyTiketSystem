@@ -19,52 +19,6 @@
     <!-- Responsive Style -->
     <link rel="stylesheet" href="https://skyup.su/css/responsive.css">
 <body>
-    <!-- PRELOADER END -->
-    <!-- HEADER START -->
-    <div class="header-line-wrapper">
-        <header class="header-wrapper fixed-top plr100">
-            <div class="table height-100p">
-                <div class="table-row">
-                    <div class="table-cell valign-middle text-left">
-                        <a href="/" class="logo">
-                            <img src="images/su.png" alt="" class="img-responsive inline-block" style="width: 60px; height: 60px; border-radius: 5px;">
-                        </a>
-                    </div>
-                    <div class="table-cell valign-top text-center vm-sm">
-                        <div class="main-menu">
-                            <span class="toggle_menu">
-                                <span></span>
-                            </span>
-                            <ul class="menu clearfix">
-                                <li class="inline-block">
-                                    <a href="https://skyup.su">
-                                        Главная
-                                    </a>
-                                </li>
-                                <li class="inline-block">
-                                    <a href="https://shop.skyup.su/">
-                                        Магазин
-                                    </a>
-                                </li>
-                                <li class="inline-block">
-                                    <a href="https://skyup.su/assets">
-                                        Ассеты
-                                    </a>
-                                </li>
-                                <li class="inline-block">
-                                    <a href="https://skyup.su/rules">
-                                        Правила
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </header>
-    </div>
-    <!-- SERVERS SECTION END -->
-    <!-- NEWS SECTION START -->
     <section class="news-section ptb90">
         <div class="container">
             <div class="row">
@@ -74,24 +28,28 @@
                         <div class="title color-white">
                             Форма подачи заявок
                         </div>
-                        <div class="subtitle">
-                            
-                        </div>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="content" style="margin-left: 28%;">
-            <p>
-                <h6>Если не работает подавай заявку <a href="https://discord.gg/xwXpkFaU94">тут</a></h6>
-                Ваш игровой ник <input type="text" id="name" name="name" placeholder="filin201077"> <br>
-                Ваш возвраст <input type="text" id="age" placeholder="16" name="age"> <br>
-                Напишите о себе, о том где вы еще играли, ваши планы на сервер и сколько примерно времени вы готовы ему уделять <br>
-                <textarea id="description" placeholder="Я..." name="description"></textarea> <br> <br>
-                <button id="send">Подать заявку</button>
+        <div class="content" style=" margin-left: 38%"><br>
+            <h6>Если не работает подавай заявку <a href="https://discord.gg/xwXpkFaU94">тут</a></h6>
+            <div style="display: grid; grid-template-columns: 180px 280px;">
+                <div class="val">Ваш игровой ник <br>
+                    Ваш возвраст <br>
+                    Напишите о себе, о том где вы еще играли, ваши планы на сервер и сколько примерно времени вы готовы ему уделять</div>
+                <div class="inp">
+                    <input type="text" id="name" name="name" placeholder="filin201077"> <br>
+                    <input type="text" id="age" placeholder="16" name="age"> <br>
+                    <textarea id="description" placeholder="Я..." name="description"></textarea>
+                </div>
+            </div>
+            <div class="cho">
+                <br> <br>
+                <button id="send" style="text-align: center">Подать заявку</button>
                 <br> <br>
                 <p id="res">Если у вас отключен JavaScript, то заявки могут не работать!</p>
-            </p>
+            </div>
         </div>
         <style>
             input::placeholder, textarea::placeholder{
@@ -112,22 +70,6 @@
             }
         </style>
     </section>
-    <!-- NEWS SECTION END -->
-    <!-- FOOTER START -->
-    <footer class="footer">
-        <div class="container">
-            <div class="row">
-                <div class="copyright ptb30 col-lg-12">
-                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
-                        Copyright 2024 © All Rights Reserved
-                    </div>
-                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 text-right">
-                        Skyup.su
-                    </div>
-                </div>
-            </div>
-        </div>
-    </footer>
     <script src="send.js"></script>
 </body>
 
