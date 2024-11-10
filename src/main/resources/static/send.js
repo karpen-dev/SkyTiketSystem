@@ -9,7 +9,7 @@ document.getElementById("send").addEventListener("click", function() {
         description: description
     };
 
-    fetch("http://localhost/application", {
+    fetch("https://tickets.skyup.su/application", {
         method: "POST",
         headers: {
             "Content-Type": "application/json"
