@@ -1,6 +1,6 @@
 ## SkyUp ticket system
 ### Only russian locale
-Систем заявок с нашего сервера SkyUp   
+Системa заявок с нашего сервера SkyUp   
 ```json
 {
     "name": "filin201077", 
